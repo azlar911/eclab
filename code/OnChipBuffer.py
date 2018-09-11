@@ -1,6 +1,9 @@
 class OnChipBuffer(object):
     def __init__(self):
-        pass
-
-    def onChipBufferToWL(self):
-        pass
+        self.rawinput = []
+        self.xbarresult = []
+        self.weightsaavalue = []
+        self.inputsaavalue = []
+        self.activationvalue = []
+        self.poolingvalue = []
+        self.outputbuffer = []

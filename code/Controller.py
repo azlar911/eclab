@@ -18,6 +18,8 @@ OU_w = IO_n
 pooling_h = 2
 pooling_w = 2
 
+def CUtoCU(self):
+    pass
 class Controller(object):
     def __init__(self):
         self.weight_mat = []
@@ -28,8 +30,12 @@ class Controller(object):
         for i in range(CU_num):
             self.CU_array.append(CU(IO_n, self.weight_mat, macro, xbar_h, xbar_w, OU_h, OU_w, pooling_h, pooling_w))
 
+    def CUtoCU(self):
+        pass
+
     def run(self):
         while True:
+            self.CUtoCU()
             ###event
             ###appendTask
             break

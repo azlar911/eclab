@@ -4,6 +4,10 @@ class Xbar(object):
         self.xbar_w = xbar_w
         self.OU_h = OU_h
         self.OU_w = OU_w
-
-    def OperationUnit(self):
-        pass
+        self.filter = []
+        for i in range(xbar_h):
+            r = []
+            for j in range(xbar_w):
+                r.append(0)
+            self.filter.append(r)
+        

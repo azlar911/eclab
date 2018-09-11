@@ -3,5 +3,3 @@ class PoolingUnit(object):
         self.height = h
         self.weight = w
         
-    def pooling(self):
-        pass
